@@ -8,11 +8,17 @@ hubbot is a tool that allows you to quickly view important details related to yo
 
 ## Examples:
 
+#### Bugs:
+
 -   `hubbot bugs` - opens GitHub issues page
 -   `hubbot issues` - opens GitHub issues page
 
+#### Homepage:
+
 -   `hubbot home` - opens GitHub repo page
 -   `hubbot homepage` - opens GitHub repo page
+
+#### Pull Requests:
 
 -   `hubbot pr` - opens GitHub pull requests page
 -   `hubbot pullrequest` - opens GitHub pull requests page
