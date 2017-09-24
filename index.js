@@ -11,7 +11,7 @@ if (keyword == "open") {
 
 if (keyword == "bugs" || keyword == "issues") {
 	opn(pjson.bugs.url);
-} else if (keywords == "home" || keywords == "homepage") {
+} else if (keyword == "home" || keyword == "homepage") {
 	opn(pjson.homepage);
 }
 
