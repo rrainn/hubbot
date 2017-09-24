@@ -13,26 +13,17 @@ const argvs = process.argv;
 const parsedParams = allElementsAfter("hubbot", argvs); // ex. ['hubbot', 'bugs']
 const keyword = parsedParams[1]; // ex. 'bugs'
 
-console.log(argvs);
-console.log(parsedParams);
-console.log(keyword);
-
-
 if (keyword == "bugs" || keyword == "issues") {
 	opn(pjson.bugs.url);
 } else if (keyword == "home" || keyword == "homepage") {
 	opn(pjson.homepage);
 }
 
-// Get current directory where this was run
-console.log(process.cwd());
-
-
 function allElementsAfter(keyword, array) {
 	let pastValue = false;
 	let newArray = [];
 	array.forEach(function (element) {
-		if (element == keyword) {
+		if (element.includes(keyword)) {
 			pastValue = true;
 		}
 		if (pastValue) {
