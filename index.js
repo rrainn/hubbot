@@ -2,6 +2,16 @@
 'use strict';
 const opn = require('opn');
 const path = require('path');
+const argvs = process.argv;
+const parsedParams = allElementsAfter("hubbot", argvs); // ex. ['hubbot', 'bugs']
+const keyword = parsedParams[1]; // ex. 'bugs'
+
+if (keyword == "-v" || keyword == "--version" || keyword == "version") {
+   const mypackagejson = require('./package.json');
+   console.log("v" + mypackagejson.version);
+   process.exit();
+}
+
 try {
 	require(path.join(process.cwd(), 'package.json'));
 } catch (e) {
@@ -9,9 +19,6 @@ try {
 	process.exit(1);
 }
 const pjson = require(path.join(process.cwd(), 'package.json'));
-const argvs = process.argv;
-const parsedParams = allElementsAfter("hubbot", argvs); // ex. ['hubbot', 'bugs']
-const keyword = parsedParams[1]; // ex. 'bugs'
 
 if (keyword == "bugs" || keyword == "issues") {
 	opn(pjson.bugs.url);
@@ -19,9 +26,6 @@ if (keyword == "bugs" || keyword == "issues") {
 	opn(pjson.homepage);
 } else if (keyword == "pr" || keyword == "pullrequest" || keyword == "pulls") {
 	opn(pjson.bugs.url.replace(/issues/g, "pulls"));
-} else if (keyword == "-v" || keyword == "--version" || keyword == "version") {
-	const mypackagejson = require('./package.json');
-	console.log(mypackagejson.version);
 }
 
 function allElementsAfter(keyword, array) {
