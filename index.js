@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+'use strict';
 const opn = require('opn');
 const pjson = require('./package.json');
 let keyword = process.argv[1];
