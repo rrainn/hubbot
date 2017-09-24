@@ -17,6 +17,8 @@ if (keyword == "bugs" || keyword == "issues") {
 	opn(pjson.bugs.url);
 } else if (keyword == "home" || keyword == "homepage") {
 	opn(pjson.homepage);
+} else if (keyword == "pr" || keyword == "pullrequest" || keyword == "pulls") {
+	opn(pjson.bugs.url.replace(/issues/g, "pulls"));
 }
 
 function allElementsAfter(keyword, array) {
