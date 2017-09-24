@@ -20,7 +20,7 @@ if (keyword == "bugs" || keyword == "issues") {
 } else if (keyword == "pr" || keyword == "pullrequest" || keyword == "pulls") {
 	opn(pjson.bugs.url.replace(/issues/g, "pulls"));
 } else if (keyword == "-v" || keyword == "--version" || keyword == "version") {
-	const mypackagejson = require('./package.json'));
+	const mypackagejson = require('./package.json');
 	console.log(mypackagejson.version);
 }
 
