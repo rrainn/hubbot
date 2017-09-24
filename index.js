@@ -1,6 +1,6 @@
-const opn = require('opn');
-const pjson = require('./package.json');
-let keyword = process.argv[1];
+var opn = require('opn');
+var pjson = require('./package.json');
+var keyword = process.argv[1];
 
 if (keyword == "open") {
 	keyword = process.argv[2];
