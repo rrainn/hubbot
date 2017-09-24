@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/rrainn/hubbot.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "rrainn, Inc.",
+  "license": "MIT License",
   "bugs": {
     "url": "https://github.com/rrainn/hubbot/issues"
   },
