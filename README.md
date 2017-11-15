@@ -1,4 +1,4 @@
-# hubbot
+# hubbot [![NPM version](https://badge.fury.io/js/hubbot.svg)](http://badge.fury.io/js/hubbot) [![Known Vulnerabilities](https://snyk.io/test/github/rrainn/hubbot/badge.svg)](https://snyk.io/test/github/rrainn/hubbot)
 
 hubbot is a tool that allows you to quickly view important details related to your code. Below is a list of example of what hubbot can do.
 
