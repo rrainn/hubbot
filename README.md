@@ -1,4 +1,4 @@
-# hubbot [![NPM version](https://badge.fury.io/js/hubbot.svg)](http://badge.fury.io/js/hubbot) [![Known Vulnerabilities](https://snyk.io/test/github/rrainn/hubbot/badge.svg)](https://snyk.io/test/github/rrainn/hubbot)
+# hubbot [![NPM version](https://badge.fury.io/js/hubbot.svg)](http://badge.fury.io/js/hubbot) [![Known Vulnerabilities](https://snyk.io/test/github/rrainn/hubbot/badge.svg)](https://snyk.io/test/github/rrainn/hubbot) [![Dependencies](https://david-dm.org/rrainn/hubbot.svg)](https://david-dm.org/rrainn/hubbot) [![Dev Dependencies](https://david-dm.org/rrainn/hubbot/dev-status.svg)](https://david-dm.org/rrainn/hubbot?type=dev)
 
 hubbot is a tool that allows you to quickly view important details related to your code. Below is a list of example of what hubbot can do.
 
